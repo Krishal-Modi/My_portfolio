@@ -23,7 +23,9 @@ body {
     height: auto;
 }
 
-/* Nav */
+/*               Navigation Bar               */
+
+
 .header1 {
     box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
     background: #FCF6F5;
@@ -96,7 +98,7 @@ li a:hover {
     animation: rightSideAni 1.5s ease forwards;
 }
 
-/* Section 1 */
+/*               Section 1              */
 
 .main {
     padding: 6rem 0;
@@ -170,7 +172,7 @@ li a:hover {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-/*  Resume  */
+/*                  Resume                */
 .resume{
     padding-top: 10%;
     padding-left: 1%;
@@ -187,7 +189,7 @@ li a:hover {
     animation: leftSideAni 1s ease forwards;
 }
 
-/* Animation */
+/*                Animation               */
 @keyframes leftSideAni {
     0% {
         transform: translateX(-100px);
@@ -326,10 +328,10 @@ li a:hover {
     }
 }
 
-/*              Section 2               */
+/*                About               */
 
 .about-box{
-    margin: 11% 3% 3% 3%;
+    margin: 10% 3% 3% 3%;
     padding: 0%;
     box-shadow: 0px 4px 17px #990011;
     background: #FCF6F5;
@@ -342,12 +344,13 @@ li a:hover {
 
 .aboutheading{
     text-align: center;
-    padding: 5%;
+    padding: 4%;
     font-size: 30px;
     color: black;
 }
 
 .box-content{
+    padding-top: 0;
     display: inline-flex;
     flex-direction: row;
     margin: 2%;
@@ -366,6 +369,33 @@ li a:hover {
     
 }
 
+.containerofabout{
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 900px)
+{
+    .box-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box{
+        margin: 11% 5% 3% 5%;
+        padding: 0%;
+        box-shadow: 0px 4px 17px #990011;
+        background: #FCF6F5;
+        top: 0;
+        font-size: 20px;
+        z-index: 1;
+        border-radius: 30px;
+        
+    }
+}
+
+
 @media (max-width: 600px)
 {
     .box-content{
@@ -380,8 +410,135 @@ li a:hover {
 
 }
 
-.containerofabout{
-    margin: auto;
-    padding-bottom: 5%;
+
+
+/*              Skills              */
+
+
+section, footer {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 17px #990011;
+    background: #FCF6F5;
+    border-radius: 30px;    
 }
 
+.skills {
+    margin: 13% 3% 5% 3%;
+    background-color: White;
+}
+
+.skills > h2{
+    padding: 30px;
+    font-size: 200%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.skill-div {
+    /*background-color: #EAD196;*/
+    border: 1px #990011 solid;
+    color: #FCF6F5;
+    transition: transform 0.3s ease-in;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.skill-div:hover{
+    transform: translateY(-10px);
+
+}
+
+.skill-div > div > h3{
+    padding: 0% 0% 5% 0%;
+    color: black;
+    padding-top: 10px;
+    border-radius: 30px;
+
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+}
+
+
+/*                      Qualification                   */
+
+
+.qualification {
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 6%;
+}
+
+.heading-qualification{
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+}
+  
+.qualification-text{
+    margin-left: 36%;
+    display: flex;
+
+}
+
+.dot1 {
+width: 20px;
+height: 20px;
+background-color: #990011;
+box-shadow: #990011;
+border-radius: 50%;
+margin: 20px -10px 70px 0px;
+}
+
+.current-status{
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.current-status > span{
+    font-size: 17px;
+}
+
+.dot2 {
+width: 20px;
+height: 20px;
+background-color: black;
+border-radius: 50%;
+margin: 70px 0px 0px -10px;
+}
+
+.line {
+width: 2px;
+height: 30px;
+background-color: black;
+}
+
+
+/*                      Projects                    */
+
+.project{
+    margin-top: 16%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 6%;
+}
