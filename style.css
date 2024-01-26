@@ -566,10 +566,6 @@ background-color: black;
     transition: transform 0.3s ease-in-out;
 }
 .carousel-item {
-    border-color: #00AB7C;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 30px;
     padding: 20px 20px 50px 20px;
     display: flex;
     flex-direction: row; /* Reverse the order of the image and text */
@@ -670,10 +666,10 @@ background-color: black;
 }
 
 .mail-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px;
-    margin: 5% 30% 0% 15%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5% 30% 0% 18%;
 }
 
 .mail-1 > img{
@@ -681,28 +677,30 @@ background-color: black;
     width: 40px;
 }
 
-.mail-1 > p{
-    margin-right: 20%;
+.mail-1 > p > a{
+    font-size: 22px;
+    margin-top: 0%;
 }
 
-.ph-no-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px;
-    margin: 5% 30% 0% 10%;
+.ph-no-2 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adjust the gap as needed */
+    margin: 5% 30% 0% 18%; /* Adjust the margins as needed */
 }
 
-.ph-no-2 > p{
-    margin-right: 60%;
-    margin-top: 5%;
+.ph-no-2 > img {
+    height: 40px;
+    width: 40px;
+}
+
+.ph-no-2 > p > a {
+    font-size: 22px;
+    margin-top: 0%; /* Adjust the margin-top as needed */
 }
 
 .projects-3{
-    margin: 5% 30% 0% 10%;
-}
-
-.projects-3 > h3{
-    margin-top: 5%;
+    margin: 8% 30% 0% 18%;
 }
 
 .projects-3 > button{
@@ -760,4 +758,6 @@ background-color: black;
     height: 16%;
     border-radius: 30px;
     margin-top: 2%;
+    background-color: #00AB7C;
+    color: #ffff;
 }
