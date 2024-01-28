@@ -433,6 +433,8 @@ section, footer {
     box-shadow: 0px 4px 17px #00AB7C;
     background: #242630;
     border-radius: 30px;    
+    animation: SocialAni 1s ease forwards;
+    animation-delay: calc(.2s * var(--socialAni));
 }
 
 .skills {
@@ -768,6 +770,37 @@ background-color: black;
     background-color: #00AB7C;
     color: #ffff;
 }
+
+@media only screen and (max-width: 600px) {
+.contact-me {
+    grid-template-columns: 1fr; 
+}
+
+.contact-info,
+.contact-input {
+    grid-column: 1; 
+    margin: 0; 
+}
+
+.mail-1,
+.ph-no-2,
+.projects-3 {
+    margin: 5% 0; 
+}
+
+.contact-input .name,
+.contact-input .email,
+.contact-input textarea
+{
+    width: 100%; 
+    margin: 3% 0;
+}
+
+.submit-message{
+    margin: 4% 0%;
+}
+}
+
 
 /*                      Footer                    */
 
