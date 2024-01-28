@@ -788,6 +788,10 @@ background-color: black;
     margin: 5% 0; 
 }
 
+.mail-1>p{
+    font-size: 18px;
+}
+
 .contact-input .name,
 .contact-input .email,
 .contact-input textarea
