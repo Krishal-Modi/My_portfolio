@@ -792,16 +792,22 @@ background-color: black;
     font-size: 18px;
 }
 
+.contact-input{
+    margin-right: 10%;
+}
+
 .contact-input .name,
 .contact-input .email,
 .contact-input textarea
 {
     width: 100%; 
-    margin: 3% 0;
+    margin: 3% 0%;
 }
 
 .submit-message{
     margin: 4% 0%;
+    height: 20%;
+    width: 50%;
 }
 }
 
