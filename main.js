@@ -1,6 +1,6 @@
 document.getElementById('openAndDownloadBtn').addEventListener('click', function() {
     // Create a new window or tab and set its location to the PDF file
-    var pdfWindow = window.open('./timepass.pdf', '_blank');
+    var pdfWindow = window.open('./resources/timepass.pdf', '_blank');
     
     // Check if the window object is not null
     if (pdfWindow) {
