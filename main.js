@@ -1,6 +1,14 @@
+//Responsive Navbar
+function closeMenu() {
+  document.getElementById('click').checked = false;
+}
+
+
+
+
 document.getElementById('openAndDownloadBtn').addEventListener('click', function() {
     // Create a new window or tab and set its location to the PDF file
-    var pdfWindow = window.open('./resources/timepass.pdf', '_blank');
+    var pdfWindow = window.open('./resources/Krishal_Modi.pdf', '_blank');
     
     // Check if the window object is not null
     if (pdfWindow) {
@@ -52,3 +60,9 @@ const carousel = document.getElementById('image-carousel');
     continuousRollCount = 0; // Reset the continuous roll count when going back to previous slides
     showSlide(currentIndex);
   }
+
+
+
+
+
+
