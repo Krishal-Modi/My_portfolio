@@ -544,8 +544,8 @@ background-color: black;
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: flex-start; /* Align items to the start of the row */
+    gap: 20px; /* Maintain the gap between the items */
     margin-top: 20px;
 }
 
@@ -559,7 +559,9 @@ background-color: black;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    flex-grow: 1; /* Allow the box to grow if space is available */
 }
+
 
 .project-box:hover {
     transform: scale(1.05); /* Slightly zooms the box on hover */
